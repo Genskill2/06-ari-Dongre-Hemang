@@ -22,14 +22,46 @@ string ari(string str){
     value=4.71*(characters/words)+0.5*(words/sentences)-21.43;
     score=ceil(value);
    
-    string answer="";
-    int scoreValue[14]={1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-    char gradeLevel[14][50]={"Kindergarten","First/Second Grade","Third Grade","Fourth Grade","Fifth Grade","Sixth Grade","Seventh Grade","Eighth Grade","Ninth Grade","Tenth Grade","Eleventh Grade","Twelfth grade","College student","Professor"};
-    
-    for(int i=0;i<14;i++){
-        if(scoreValue[i]==score){
-            strcpy(gradeLevel[i][50],answer);
-        }
+   if(score==1){
+        return "Kindergarten";
     }
-   return answer;
+    if(score==2){
+        return "First/Second Grade";
+    }
+    if(score==3){
+        return "Third Grade";
+    }
+    if(score==4){
+        return "Fourth Grade";
+    }
+    if(score==5){
+        return "Fifth Grade";
+    }
+    if(score==6){
+        return "Sixth Grade";
+    }
+    if(score==7){
+        return "Seventh Grade";
+    }
+    if(score==8){
+        return "Eighth Grade";
+    }
+    if(score==9){
+        return "Ninth Grade";
+    }
+    if(score==10){
+        return "Tenth Grade";
+    }
+    if(score==11){
+        return "Eleventh Grade";
+    }
+    if(score==12){
+        return "Twelfth grade";
+    }
+    if(score==13){
+        return "College student";
+    }
+    if(score==14){
+        return "Professor";
+    }
 }
