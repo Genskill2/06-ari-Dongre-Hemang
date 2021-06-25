@@ -7,7 +7,7 @@ char ari(char str[]){
     int characters=0,words=1,sentences=1,value=0;
     
     for(int i=0;i<=length;i++){
-        if(isalnum(str[i])!=0){
+        if(isalnum(str[i])!='0'){
             characters++;
         }
         if(str[i]==' '){
