@@ -27,8 +27,8 @@ char ari(char str[]){
     
     for(int i=0;i<14;i++){
         if(scoreValue[i]==score){
-            strcpy(gradeLevel[i][50],answer);
+            strcpy(gradeLevel[i],answer[]);
         }
     }
-   return answer;
+   return answer[];
 }
