@@ -1,8 +1,9 @@
 #include<string.h>
 #include<math.h>
 #include<ctype.h>
+#include<cs50.h>
 
-string ari(string str[]){
+string ari(string str){
     float score=0;
     int length=strlen(str);
     int characters=0,words=1,sentences=1,value=0;
