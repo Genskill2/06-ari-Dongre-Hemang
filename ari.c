@@ -1,3 +1,6 @@
+#include<string.h>
+#include<math.h>
+
 char ari(char str[]){
     float score=0;
     int length=strlen(str);
