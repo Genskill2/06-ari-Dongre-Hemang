@@ -1,5 +1,6 @@
 #include<string.h>
 #include<math.h>
+#include<ctype.h>
 
 char ari(char str[]){
     float score=0;
@@ -19,15 +20,15 @@ char ari(char str[]){
     }
     value=4.71*(characters/words)+0.5*(words/sentences)-21.43;
     score=ceil(value);
-    char answer[]=" ";
+   
     
     int scoreValue[14]={1,2,3,4,5,6,7,8,9,10,11,12,13,14};
     char gradeLevel[14][50]={"Kindergarten","First/Second Grade","Third Grade","Fourth Grade","Fifth Grade","Sixth Grade","Seventh Grade","Eighth Grade","Ninth Grade","Tenth Grade","Eleventh Grade","Twelfth grade","College student","Professor"};
     
     for(int i=0;i<14;i++){
         if(scoreValue[i]==score){
-            strcpy(gradeLevel[i],answer);
+            return gradeLevel[i][50];
         }
     }
-    return answer;
+   
 }
