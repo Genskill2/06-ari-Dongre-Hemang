@@ -12,9 +12,13 @@ string ari(string str){
         if(isalnum(str[i])!='0'){
             characters++;
         }
+    }
+    for(int i=0;i<=length;i++){
         if(str[i]==' '){
             words++;
         }
+    }
+    for(int i=0;i<=length;i++){
         if(str[i] == '.' || str[i] == '?' || str[i]=='!'){
             sentences++;
         }
