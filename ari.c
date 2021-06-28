@@ -68,4 +68,5 @@ string ari(string str){
     if(score==14){
         return "Professor";
     }
+return 0;
 }
