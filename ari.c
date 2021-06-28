@@ -6,7 +6,7 @@
 string ari(string str){
     float value=0;
     int length=strlen(str);
-    int characters=0,words=0,sentences=0,score=0;
+    int characters=0,words=0,sentences=0,score;
     
     for(int i=0;i<=length;i++){
         if(isalnum(str[i])!='0'){
@@ -23,8 +23,8 @@ string ari(string str){
             sentences++;
         }
     }
-    value=4.71*(characters/words)+0.5*(words/sentences)-21.43;
-    score=ceil(value)+1;
+    value=4.71*((float)characters/(float)words)+0.5*((float)words/(float)sentences)-21.43;
+    score=ceil(value);
    
    if(score==1){
         return "Kindergarten";
