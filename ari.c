@@ -1,5 +1,6 @@
 #include<math.h>
 #include<ctype.h>
+#include<string.h>
 
 string ari(string str){
     float value=0;
