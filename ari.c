@@ -1,14 +1,14 @@
+#include <string.h>
 #include<math.h>
 #include<ctype.h>
-#include<string.h>
 
-string ari(string str){
+char* ari(char* str){
     float value=0;
     int length=strlen(str);
     int characters=0,words=0,sentences=0,score;
     
     for(int i=0;i<=length;i++){
-        if(isalnum(str[i])!='0'){
+        if(isalnum(str[i])!=0){
             characters++;
         }
     }
@@ -22,6 +22,7 @@ string ari(string str){
             sentences++;
         }
     }
+
     value=4.71*((float)characters/(float)words)+0.5*((float)words/(float)sentences)-21.43;
     score=ceil(value);
    
